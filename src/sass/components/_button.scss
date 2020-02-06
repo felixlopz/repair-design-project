@@ -1,0 +1,41 @@
+.btn{
+	display: block;
+	padding: 1.4rem 2.1rem;
+	font-size: 1.3rem;
+	font-weight: $bold;
+	line-height: 1.5rem;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+
+	&--primary{
+		background: $clr-primary;
+		color: $clr-white;
+	}
+
+	&--white{
+		
+	}
+	
+
+	&--outlined{
+		color: white;
+		background: transparent;
+		border: 1px solid $clr-white;
+	}
+
+	&--full{
+		width: 100%;
+	}
+
+	&:not(:last-child){
+		margin-bottom: 2rem;
+	}
+
+	@include respond(phone-small){
+		padding: 1.8rem 2.5rem;
+	}
+
+
+}
+
