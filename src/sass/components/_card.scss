@@ -1,0 +1,63 @@
+.card{
+	position: relative;
+	margin-bottom: 6rem;
+
+	&__body{
+		text-align: left;
+		position: absolute;
+		top: 45%;
+		left:0;
+		height: 24.1rem;
+		width: 85%;
+		background: $clr-white;
+		color: $clr-secondary;
+		z-index: 1;
+		padding: 2.1rem 3.1rem;
+	}
+
+	&__title{
+		font-size: 1.5rem;
+		font-family: $yeseva;
+		margin-bottom: 1rem;
+	}
+
+	&__list{
+		padding-left: 1.55rem;
+
+	}
+
+	&__item{
+		font-size: 1.1rem;
+		line-height: 169.8%;
+		color: #959595;
+
+
+		&:not(:last-child){
+			margin-bottom: 0.2rem; 
+		}
+	}
+
+
+	&__btn{
+		position: relative;
+		z-index: 2;
+		text-align: left;
+		margin-top: 10.885rem;
+	}
+
+
+
+	@include respond(phone-small){
+		&__item{
+			font-size: 1.3rem;
+
+			&:not(:last-child){
+				margin-bottom: 0.2rem; 
+			}
+		}
+
+		&__btn{	
+			margin-top: 7.885rem;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+.carousel{
+	&__images{
+		height: 24rem;
+		background: lightgrey;
+		width: 100%;
+		margin: 3.6rem 0;
+	}
+
+	&__info{
+		max-width: 34.1rem;
+	}
+
+	&__details{
+		text-align: left;
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+
+	}
+
+	&__item{
+		flex: 1 0 12rem;
+		margin-bottom: 2.1rem;
+	}
+
+
+	&__title{
+		margin-bottom: 1.1rem;
+		font-family: $yeseva;
+		font-size: 1.4rem;
+		color: $clr-primary;
+		text-transform: uppercase;
+	}
+
+	&__desc{
+		font-size: 1.4rem;
+		line-height: 135.84%;
+	}
+}
