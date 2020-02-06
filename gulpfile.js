@@ -36,7 +36,7 @@ var paths = {
 		output: 'dist/svg/'
 	},
 	images: {
-		input: 'src/assets/*.{jpeg,png,gif,svg}',
+		input: 'src/assets/**/*.{jpeg,png,gif,svg,jpg}',
 		output: 'dist/assets/'
 	},
 	copy: {
