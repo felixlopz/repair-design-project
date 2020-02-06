@@ -1,0 +1,30 @@
+// Yeseva and Oxygen fonts
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Yeseva+One&display=swap');
+body{
+	font-family: $oxygen;
+	font-size: $default-font-size;
+}
+
+.title{
+	font-family: $yeseva;
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+
+	&--primary{
+		color: $clr-primary;
+	}
+	&--dark{
+		color: $clr-black;
+	}
+}
+
+.paragraph{
+	font-size: 1.4rem;
+	line-height: 169.8%;
+	font-weight: $light;
+
+	&:not(:last-child){
+		margin-bottom: 4rem;
+	}
+}

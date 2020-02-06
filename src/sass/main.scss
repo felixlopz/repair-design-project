@@ -4,14 +4,15 @@
 // 2. Vendors
 
 // 3. Base stuff
-@import 'base/base', 'base/fonts', 'base/typography', 'base/utilities',
-  'base/animations', 'base/reset';
+@import 'base/reset', 'base/fonts', 'base/typography', 'base/utilities',
+  'base/animations', 'base/base'; 
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer', 'layout/navigation', 'layout/grid';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button', 'components/separator', 'components/form',
+			  'components/carousel', 'components/card';
 
 // 6. Page-specific styles
 @import 'pages/home';
