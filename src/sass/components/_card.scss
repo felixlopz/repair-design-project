@@ -1,6 +1,9 @@
 .card{
 	position: relative;
-	margin-bottom: 6rem;
+
+	&:not(:last-child){
+		margin-bottom: 6rem;
+	}
 
 	&__body{
 		text-align: left;
@@ -19,6 +22,7 @@
 		font-size: 1.5rem;
 		font-family: $yeseva;
 		margin-bottom: 1rem;
+		text-transform: capitalize;
 	}
 
 	&__list{
@@ -39,6 +43,7 @@
 
 
 	&__btn{
+		box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
 		position: relative;
 		z-index: 2;
 		text-align: left;

@@ -37,3 +37,76 @@
 	background: $clr-white;
 	padding: 6rem 1.5rem;
 }
+
+
+.gallery{
+	background: $clr-white;
+	position: relative;
+	z-index: 1;
+
+	&__carousel{
+		width: 100%;
+		height: 24.2rem;
+		background: lightgrey;
+		position: relative;		
+
+		&::before{
+			content:'';
+			position: absolute;
+			background: $clr-secondary;
+			left: -1.5rem;
+			right: -1.5rem;
+			top: 50%;
+			bottom: 0;
+			z-index: -1;
+		}
+	}
+}
+
+.design{
+	padding: 6rem 1.5rem;
+}
+
+.contact{
+	&__form{
+		margin-top: 3.6rem;
+	}
+
+	&__map-box{
+		margin: 4rem 0;
+	}
+
+	&__direction{
+		padding: 0  1.8rem;
+		font-family: $yeseva;
+		font-size: 1.8rem;
+		line-height: 138.6%;
+		color: $clr-primary;
+		text-transform: uppercase;
+	}
+
+	&__socials{
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		margin: 2.4rem 0;
+	}
+
+	&__item{
+		border-radius: 50%;
+		padding: 1.4rem 1.4rem;
+		background: $clr-primary;
+
+		&:not(:last-child){
+			margin-right: 4rem;
+		}
+	}
+
+	&__link{
+
+	}
+
+	&__icon{
+
+	}
+}
