@@ -1,3 +1,18 @@
-.row{
+.container{
 	padding: 0 1.5rem;
+	max-width: 50rem;
+	margin: 0 auto;
+
+	&--fluid{
+		padding: 0 1.5rem;
+	}
+
+	@include respond(phone){
+		&--fluid{
+			padding: 0 calc( (100vw - (50rem - 1.5rem)) / 2);
+		}
+	}
+}
+
+.row{
 }
