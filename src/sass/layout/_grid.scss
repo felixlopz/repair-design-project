@@ -1,16 +1,20 @@
-.container{
-	padding: 0 1.5rem;
-	max-width: 50rem;
-	margin: 0 auto;
 
-	&--fluid{
-		padding: 0 1.5rem;
-	}
+
+.container{
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+	max-width: $container;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-fluid{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 
 	@include respond(phone){
-		&--fluid{
-			padding: 0 calc( (100vw - (50rem - 1.5rem)) / 2);
-		}
+		padding-left: calc( (100vw - (#{$container} - #{$container-padding})) / 2);
+		padding-right: calc( (100vw - (#{$container} - #{$container-padding})) / 2);
 	}
 }
 
