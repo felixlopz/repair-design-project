@@ -1,6 +1,7 @@
 // Colours
 $clr-primary: #E3B873;
 $clr-secondary: #252525;
+$clr-secondary-darker: #131313; 
 $clr-white: #fff;
 $clr-black: #000;
 
@@ -14,7 +15,8 @@ $bold: 700;
 $default-font-size: 1rem;
 
 // Utils
-
+$btn-shadow-primary: 0px 5px 15px rgba(227, 184, 115, 0.2);
+$box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 
 // Grid
 $container: 50rem;
