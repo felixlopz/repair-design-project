@@ -6,6 +6,11 @@
 	max-width: $container;
 	margin-left: auto;
 	margin-right: auto;
+
+	@include respond(tab-port){
+		max-width: 114rem;
+		padding: 0;
+	}
 }
 
 .container-fluid{
@@ -15,6 +20,11 @@
 	@include respond(phone){
 		padding-left: calc( (100vw - (#{$container} - #{$container-padding})) / 2);
 		padding-right: calc( (100vw - (#{$container} - #{$container-padding})) / 2);
+	}
+
+	@include respond(tab-port){
+		padding-left: calc( (100vw - 114rem) / 2);
+		padding-right: calc( (100vw - 114rem) / 2);
 	}
 }
 

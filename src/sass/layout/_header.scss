@@ -1,18 +1,17 @@
 .header{
+	
 	height: 100vh;
 	max-height: 53.3rem;
 	display: flex;
 	flex-direction: column;
 
 	&__contact{
-
 		flex-basis: 5.7rem;
 		display: flex;
 		width: 100%;
 		align-items: center;
 		justify-content: space-between;
 	}
-
 
 	&__project-name{
 		text-transform: uppercase;
@@ -25,7 +24,14 @@
 
 	&__body{
 		flex: 1;
-		background: pink;
+	}
+
+	&__aside{
+		display: none;
+	}
+
+	&__content{
+		height: 100%;
 		background-image: linear-gradient(
       to left,
       rgba($clr-black, 0.7),
@@ -52,6 +58,11 @@
 		margin: 2.2rem 0 2rem 0;
 	}
 
+	&__btn{
+		display: none;
+		position: absolute;
+		opacity: 0;
+	}
 
 	@include respond(phone-small){
 		&__project-name, &__phone-number{
@@ -65,8 +76,99 @@
 		&__text{
 			font-size: 1.8rem;
 		}
-
-
 	}
+
+
+	@include respond (tab-port){
+
+		max-height: none;
+		background-color: $clr-secondary-darker;
+
+		&__project-name,&__phone-number{
+			font-size: 1.4rem;
+		}
+		&__phone-number{
+			color: $clr-primary;
+			text-decoration: underline;
+		}
+
+		&__btn{
+			position: static;
+			opacity: 1;
+			padding: 1rem 1.7rem !important;
+			margin-left: 2.4rem;
+		}
+
+		&__body{
+			display: flex;
+		}
+
+		&__aside{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-basis: calc( (100vw - 114rem) / 2);
+
+		}
+
+		&__social{
+			font-family: $oxygen;
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			color: $clr-primary;
+			transform: rotate(90deg);
+			position: relative;
+
+			&::after{
+				content: '';
+				position: absolute;
+				width: 51px;
+				height: 1px;
+				top: 50%;
+				transform: translateY(-50%);
+				transform: translateX(20%);
+				background: $clr-primary;
+				border-radius: 4px;
+			}
+		}
+
+		&__content{
+			flex: 1;
+			background-image: linear-gradient(
+				to left,
+				rgba($clr-black, 0.7),
+				rgba($clr-black, 0.7)
+			),
+			url('../assets/header.jpg');
+			padding: 0 !important;
+		}
+
+		&__content-box{
+			max-width: 52rem;
+			margin-left: 6rem;
+		}
+
+		&__title{
+			font-size: 4rem;
+		}
+	
+		&__text{
+			font-size: 2.2rem;
+			line-height: 30px;		
+		}
+
+		&__button-box{
+			display: flex;
+		}
+
+		&__content-btn{
+			width: 22.7rem !important;
+			&:not(:last-child){
+				margin-bottom: 0 !important;
+				margin-right: 2rem !important;
+			}
+		}
+	}
+
 
 }
