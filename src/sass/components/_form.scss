@@ -1,41 +1,41 @@
-.form{
-	width: 100%;
+.form {
+  width: 100%;
 
-	&__group{
-		text-align: left;
-		display: block;
-	}
+  &__group {
+    text-align: left;
+    display: block;
+  }
 
-	&__input{
-		color: $clr-white;
-		font-family: $oxygen;
-		width: 100%;
-		background: $clr-secondary;
-		border: none;
-		outline: none;
-		font-size: 1.8rem;
-		padding: 0.5rem 0;
-		border-bottom: 1px solid $clr-white;
+  &__input {
+    color: $clr-white;
+    font-family: $oxygen;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid $clr-white;
 
-		&::placeholder{
-			font-weight: $light;
-			color: $clr-white;
-			font-family: $oxygen;
-		}
+    &::placeholder {
+      font-weight: $light;
+      color: $clr-white;
+      font-family: $oxygen;
+    }
 
-		&:focus{
-			border-bottom: 1px solid $clr-primary;
-		}
-	}
+    &:focus {
+      border-bottom: 1px solid $clr-primary;
+    }
+  }
 
-	&__label{
-		color: rgba(255, 255, 255, 0.5);
-		font-size: 1.5rem;
-		text-transform: capitalize;
-	}
+  &__label {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
 
-	&__checkbox{
-		display: block;
+  &__checkbox {
+    display: block;
     position: relative;
     font-size: 1.6rem;
     padding-left: 2.7rem;
@@ -43,55 +43,49 @@
     cursor: pointer;
     user-select: none;
 
-    input{
-    	display: none;
+    input {
+      display: none;
     }
 
-    &:hover input ~ .form__checkmark{
-    	/*background: pink;*/
+    & input:checked ~ .form__checkmark::after {
+      display: block;
     }
+  }
 
-    & input:checked ~ .form__checkmark::after{
-    	display: block;
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    background: $clr-primary;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 7px;
+      top: 4px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
     }
-	}
-
-	&__checkmark{
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 1.8rem;
-		width: 1.8rem;
-		background: $clr-primary;
-
-		&::after{
-			content: "";
-		  position: absolute;
-		  display: none;
-		  left: 7px;
-		  top: 4px;
-		  width: 5px;
-		  height: 10px;
-		  border: solid white;
-		  border-width: 0 3px 3px 0;
-		  transform: rotate(45deg);
-		}
-	}
-
+  }
 }
 
 /* Margins */
-.form{
+.form {
+  &--input-margin {
+    margin-bottom: 6.3rem;
+  }
 
-	&--input-margin{
-		margin-bottom: 6.3rem;
-	}
+  &--checkbox-margin {
+    margin-bottom: 2.6rem;
+  }
 
-	&--checkbox-margin{
-		margin-bottom: 2.6rem;
-	}
-
-	&--btn-margin{
-		margin-top: 6.3rem;
-	}
+  &--btn-margin {
+    margin-top: 6.3rem;
+  }
 }
