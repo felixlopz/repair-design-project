@@ -29,3 +29,16 @@ body{
 		margin-bottom: 4rem;
 	}
 }
+
+
+// Dekstop Styles
+@include respond (tab-port){
+	.title{
+		font-size: 2.7rem;
+	}
+	.paragraph{
+		font-size: 1.8rem;
+		line-height: 29px;
+	}
+
+}

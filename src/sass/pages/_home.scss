@@ -1,6 +1,37 @@
 
 .projects{
 	margin-top: 3.6rem;
+
+	@include respond (tab-port){
+		position: relative;
+		min-height: 107.4rem;
+		padding-top: 17.6rem;
+		margin-top: 0;
+		text-align: left;
+		background:
+		 url('../assets/bg-projects.png'), $clr-secondary-darker;
+		background-position: center center;
+		background-size: cover; 
+		 
+		&__title{
+			margin-top: 5.3rem;
+			display: inline-block;
+			position: relative;
+
+			&::after{
+				content: '';
+				position: absolute;
+				width: 9.2rem;
+				height: 1px;
+				top: 80%;
+				right: -10rem;
+				background-color:$clr-primary;
+			}
+		}
+		&__paragraph{
+			width: 42%;
+		}
+	}
 }
 
 .control{
@@ -103,11 +134,4 @@
 		}
 	}
 
-	&__link{
-
-	}
-
-	&__icon{
-
-	}
 }

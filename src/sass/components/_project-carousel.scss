@@ -1,4 +1,4 @@
-.carousel{
+.project-carousel{
 	&__images{
 		height: 24rem;
 		background: lightgrey;
@@ -35,5 +35,25 @@
 	&__desc{
 		font-size: 1.4rem;
 		line-height: 135.84%;
+	}
+
+	@include respond(tab-port){
+		&__images{
+			display: none;
+		}
+		
+		&__info{
+			max-width: 35.1rem;
+		}
+
+		&__title{
+			font-size: 1.8rem;
+
+		}
+
+		&__desc{
+			font-size: 1.5rem;
+			line-height: 20px;
+		}
 	}
 }
