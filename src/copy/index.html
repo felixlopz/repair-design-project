@@ -276,32 +276,40 @@
               <li class="offers__item">
                 <div class="offers__item-wrapper">
                   <span class="offers__icon">01</span>
-                  <p class="offers__offer">
+                  <span class="offers__offer">
                     Our specialist will arrive for measurements per day<br />
                     contact, or appoint a date convenient for you
-                  </p>
+                  </span>
                 </div>
               </li>
               <li class="offers__item">
-                <span class="offers__icon">02</span>
-                <p class="offers__offer">Free metering</p>
+                <div class="offers__item-wrapper">
+                  <span class="offers__icon">02</span>
+                  <p class="offers__offer">Free metering</p>
+                </div>
               </li>
               <li class="offers__item">
-                <span class="offers__icon">03</span>
-                <p class="offers__offer">Free consultation</p>
+                <div class="offers__item-wrapper">
+                  <span class="offers__icon">03</span>
+                  <p class="offers__offer">Free consultation</p>
+                </div>
               </li>
               <li class="offers__item">
-                <span class="offers__icon">04</span>
-                <p class="offers__offer">
-                  Get a cost estimate and the timing of your future repairs
-                </p>
+                <div class="offers__item-wrapper">
+                  <span class="offers__icon">04</span>
+                  <p class="offers__offer">
+                    Get a cost estimate and <br />
+                    the timing of your future repairs
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
           <div class="offers__form-wrapper">
             <form action="#" class="form offers__form">
-              <h4 class="offers__form-iitle">
-                Leave a request for free departure of the measurer
+              <h4 class="offers__form-title">
+                Leave a request for free <br />
+                departure of the measurer
               </h4>
               <div class="form__group form--input-margin">
                 <label for="name" class="form__label">
@@ -314,7 +322,7 @@
                   placeholder="What is your name:"
                 />
               </div>
-              <div class="form__group form--checkbox-margin">
+              <div class="form__group form--input-margin offers__input-margin">
                 <label for="number" class="form__label">
                   number
                 </label>
@@ -325,6 +333,17 @@
                   placeholder="Your phone number:"
                 />
               </div>
+              <div class="form__group  form--checkbox-margin">
+                <label for="email" class="form__label">
+                  email
+                </label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="email"
+                  placeholder="Your Email"
+                />
+              </div>
               <div class="form__group">
                 <label class="form__checkbox"
                   >I agree to the processing of personal data
@@ -332,7 +351,9 @@
                   <span class="form__checkmark"></span>
                 </label>
               </div>
-              <button class="btn btn--primary form--btn-margin">
+              <button
+                class="btn btn--primary form--btn-margin offers__btn-margin"
+              >
                 Call the Measurer
               </button>
             </form>
@@ -341,106 +362,165 @@
                 <img src="./assets/icons/pig.png" alt="pig icon png" />
               </figure>
               <span class="offers__saving-text">
-                Help save 10 - 20% of the cost of materials
+                Help save 10 - 20% of the <br />
+                cost of materials
               </span>
             </div>
           </div>
         </div>
       </section>
       <section class="gallery container-fluid">
-        <h2 class="title title--primary">
+        <h2 class="title title--primary gallery__title">
           We Realize your <br />
           wildest fantasies
         </h2>
+        <div class="gallery__list-wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <span class="gallery__style">American classic</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Empire</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Classical</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Loft</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Minimalism</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Provence</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Romanticism</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Scandinavian style</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Mediterranean style</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">High tech</span>
+            </li>
+            <li class="gallery__item">
+              <span class="gallery__style">Eclecticism</span>
+            </li>
+          </ul>
+        </div>
         <div class="gallery__carousel"></div>
       </section>
-      <section class="design container">
-        <h2 class="title">
-          design project
-        </h2>
-        <div class="separator">
-          <img
-            class="separator__icon"
-            src="./assets/icons/pencil.png"
-            alt="yellow camera icon"
-          />
-        </div>
-        <p class="paragraph control__paragraph">
-          Design project not only helps to make the repair of your apartment
-          more modern, but also significantly reduces the cost of materials and
-          reduces the time of repair work.
-        </p>
-        <div class="card">
-          <figure class="card__photo-box">
+      <section class="design">
+        <div class=" container design__container">
+          <h2 class="title design__title">
+            design project
+          </h2>
+          <div class="separator">
             <img
-              class="card__photo"
-              src="./assets/mobile/types-1.jpg"
-              alt="good for repair"
+              class="separator__icon"
+              src="./assets/icons/pencil.png"
+              alt="yellow camera icon"
             />
-          </figure>
-          <div class="card__body">
-            <h3 class="card__title">
-              Mini
-            </h3>
-            <ul class="card__list">
-              <li class="card__item">Measurement drawing</li>
-              <li class="card__item">Redevelopment</li>
-              <li class="card__item">Layout of furniture</li>
-              <li class="card__item">Plumbing plan. equipment</li>
-            </ul>
           </div>
-          <button class="btn btn--primary card__btn">150 rub / m2</button>
-        </div>
-        <div class="card">
-          <figure class="card__photo-box">
-            <img
-              class="card__photo"
-              src="./assets/mobile/types-2.jpg"
-              alt="good for repair"
-            />
-          </figure>
-          <div class="card__body">
-            <h3 class="card__title">
-              standar
-            </h3>
-            <ul class="card__list">
-              <li class="card__item">Measurement drawing</li>
-              <li class="card__item">Redevelopment</li>
-              <li class="card__item">Layout of furniture</li>
-              <li class="card__item">Plan of ceiling</li>
-              <li class="card__item">Floor plan</li>
-              <li class="card__item">Electricians plan</li>
-              <li class="card__item">Lighting plan</li>
-            </ul>
+          <p class="paragraph control__paragraph">
+            Design project not only helps to make the repair of your apartment
+            more modern, but also significantly reduces the cost of materials
+            and reduces the time of repair work.
+          </p>
+          <div class="design__card-container">
+            <div class="card">
+              <figure class="card__photo-box">
+                <img
+                  class="card__photo"
+                  src="./assets/mobile/types-1.jpg"
+                  alt="good for repair"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="card__body-content">
+                  <h3 class="card__title">
+                    Mini
+                  </h3>
+                  <ul class="card__list">
+                    <li class="card__item">Measurement Drawing</li>
+                    <li class="card__item">Redevelopment</li>
+                    <li class="card__item">Layout of furniture</li>
+                    <li class="card__item">Plumbing plan equiment</li>
+                  </ul>
+                </div>
+                <button class="btn btn--primary card__btn">
+                  from 900 rub / m2
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="card__photo-box">
+                <img
+                  class="card__photo"
+                  src="./assets/mobile/types-2.jpg"
+                  alt="good for repair"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="card__body-content">
+                  <h3 class="card__title">
+                    Standar
+                  </h3>
+                  <ul class="card__list">
+                    <li class="card__item">Measurement Drawing</li>
+                    <li class="card__item">Redevelopment</li>
+                    <li class="card__item">Layout of furniture</li>
+                    <li class="card__item">Plan of ceiling</li>
+                    <li class="card__item">Plumbing plan equiment</li>
+                    <li class="card__item">Floor plan</li>
+                    <li class="card__item">Electricians plan</li>
+                  </ul>
+                </div>
+                <button class="btn btn--primary card__btn">
+                  from 1800 rub / m2
+                </button>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="card__photo-box">
+                <img
+                  class="card__photo"
+                  src="./assets/mobile/types-3.jpg"
+                  alt="good for repair"
+                />
+              </figure>
+              <div class="card__body">
+                <div class="card__body-content">
+                  <h3 class="card__title">
+                    Full
+                  </h3>
+                  <ul class="card__list">
+                    <li class="card__item">Measurement Drawing</li>
+                    <li class="card__item">Redevelopment</li>
+                    <li class="card__item">Layout of furniture</li>
+                    <li class="card__item">Plan of ceiling</li>
+                    <li class="card__item">Plumbing plan equiment</li>
+                    <li class="card__item">Floor plan</li>
+                    <li class="card__item">Electricians plan</li>
+                    <li class="card__item">Lightning plan</li>
+                    <li class="card__item">Wall reamers</li>
+                    <li class="card__item">3D visualizations</li>
+                    <li class="card__item">Bill of materials</li>
+                    <li class="card__item">Furniture selection</li>
+                  </ul>
+                </div>
+                <button class="btn btn--primary card__btn">
+                  from 4000 rub / m2
+                </button>
+              </div>
+            </div>
           </div>
-          <button class="btn btn--primary card__btn">400 rub / m2</button>
-        </div>
-        <div class="card">
-          <figure class="card__photo-box">
-            <img
-              class="card__photo"
-              src="./assets/mobile/types-3.jpg"
-              alt="good for repair"
-            />
-          </figure>
-          <div class="card__body">
-            <h3 class="card__title">
-              full
-            </h3>
-            <ul class="card__list">
-              <li class="card__item">Measurement drawing</li>
-              <li class="card__item">Redevelopment</li>
-              <li class="card__item">Layout of furniture</li>
-              <li class="card__item">Plan of ceiling</li>
-              <li class="card__item">Floor plan</li>
-              <li class="card__item">Electricians plan</li>
-              <li class="card__item">Lighting plan</li>
-            </ul>
-          </div>
-          <button class="btn btn--primary card__btn">from 4000 rub / m2</button>
         </div>
       </section>
-      <section class="team container">
+      <section class="team container-fluid">
         <h2 class="title">
           Our Team
         </h2>
@@ -455,101 +535,103 @@
           Our team has helped to become happier for more than 500 families and
           we are not going to stop
         </p>
-        <div class="team-card">
-          <figure class="team-card__icon-box">
-            <img
-              class="team-card__icon"
-              src="./assets/icons/idea.png"
-              alt="idea icon"
-            />
-          </figure>
-          <div class="team-card__body">
-            <figure class="team-card__image-box">
+        <div class="team__cards-wrapper">
+          <div class="team-card">
+            <figure class="team-card__icon-box">
               <img
-                class="team-card__image"
-                src="./assets/mobile/team-1.jpg"
-                alt="team member"
+                class="team-card__icon"
+                src="./assets/icons/idea.png"
+                alt="idea icon"
               />
             </figure>
-            <div class="team-card__info">
-              <div class="team-card__person">
-                <h4 class="team-card__name">
-                  Dmitry tulyakov
-                </h4>
-                <p class="team-card__job">
-                  Project manager
-                </p>
-              </div>
-              <div class="team-card__exp">
-                <h5 class="team-card__exp-text">
-                  Work experience 8 years
-                </h5>
+            <div class="team-card__body">
+              <figure class="team-card__image-box">
+                <img
+                  class="team-card__image"
+                  src="./assets/mobile/team-1.jpg"
+                  alt="team member"
+                />
+              </figure>
+              <div class="team-card__info">
+                <div class="team-card__person">
+                  <h4 class="team-card__name">
+                    Dmitry tulyakov
+                  </h4>
+                  <p class="team-card__job">
+                    Project manager
+                  </p>
+                </div>
+                <div class="team-card__exp">
+                  <h5 class="team-card__exp-text">
+                    Work experience 8 years
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="team-card">
-          <figure class="team-card__icon-box">
-            <img
-              class="team-card__icon"
-              src="./assets/icons/pen.png"
-              alt="idea icon"
-            />
-          </figure>
-          <div class="team-card__body">
-            <figure class="team-card__image-box">
+          <div class="team-card">
+            <figure class="team-card__icon-box">
               <img
-                class="team-card__image"
-                src="./assets/mobile/team-2.jpg"
-                alt="team member"
+                class="team-card__icon"
+                src="./assets/icons/pen.png"
+                alt="idea icon"
               />
             </figure>
-            <div class="team-card__info">
-              <div class="team-card__person">
-                <h4 class="team-card__name">
-                  Larisa Kotlyarova
-                </h4>
-                <p class="team-card__job">
-                  Designer
-                </p>
-              </div>
-              <div class="team-card__exp">
-                <h5 class="team-card__exp-text">
-                  Work experience 6 years
-                </h5>
+            <div class="team-card__body">
+              <figure class="team-card__image-box">
+                <img
+                  class="team-card__image"
+                  src="./assets/mobile/team-2.jpg"
+                  alt="team member"
+                />
+              </figure>
+              <div class="team-card__info">
+                <div class="team-card__person">
+                  <h4 class="team-card__name">
+                    Larisa Kotlyarova
+                  </h4>
+                  <p class="team-card__job">
+                    Designer
+                  </p>
+                </div>
+                <div class="team-card__exp">
+                  <h5 class="team-card__exp-text">
+                    Work experience 6 years
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="team-card">
-          <figure class="team-card__icon-box">
-            <img
-              class="team-card__icon"
-              src="./assets/icons/portfolio.png"
-              alt="idea icon"
-            />
-          </figure>
-          <div class="team-card__body">
-            <figure class="team-card__image-box">
+          <div class="team-card">
+            <figure class="team-card__icon-box">
               <img
-                class="team-card__image"
-                src="./assets/mobile/team-3.jpg"
-                alt="team member"
+                class="team-card__icon"
+                src="./assets/icons/portfolio.png"
+                alt="idea icon"
               />
             </figure>
-            <div class="team-card__info">
-              <div class="team-card__person">
-                <h4 class="team-card__name">
-                  Alexey Efimov
-                </h4>
-                <p class="team-card__job">
-                  Foreman
-                </p>
-              </div>
-              <div class="team-card__exp">
-                <h5 class="team-card__exp-text">
-                  Work experience 12 years
-                </h5>
+            <div class="team-card__body">
+              <figure class="team-card__image-box">
+                <img
+                  class="team-card__image"
+                  src="./assets/mobile/team-3.jpg"
+                  alt="team member"
+                />
+              </figure>
+              <div class="team-card__info">
+                <div class="team-card__person">
+                  <h4 class="team-card__name">
+                    Alexey Efimov
+                  </h4>
+                  <p class="team-card__job">
+                    Foreman
+                  </p>
+                </div>
+                <div class="team-card__exp">
+                  <h5 class="team-card__exp-text">
+                    Work experience 12 years
+                  </h5>
+                </div>
               </div>
             </div>
           </div>
@@ -641,5 +723,40 @@
         </ul>
       </section>
     </main>
+    <footer>
+      <div class="header__contact container">
+        <span class="header__project-name color-primary">
+          IC "Repair Design Project"
+        </span>
+        <div class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">measurement</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">team</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">reviws</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">contacts</a>
+            </li>
+          </ul>
+        </div>
+        <span class="header__phone-number">
+          +7 (928) 768-32-39
+        </span>
+        <div class="btn btn--primary btn--shadow-primary header__btn">
+          request a call
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

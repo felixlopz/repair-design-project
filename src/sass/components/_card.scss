@@ -59,12 +59,14 @@
   @include respond(tab-port) {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 18rem;
 
     &:not(:last-child) {
       margin-right: 3rem;
     }
 
     &__body {
+      top: 70%;
       left: 50%;
       transform: translateX(-50%);
     }

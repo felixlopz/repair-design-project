@@ -233,6 +233,7 @@
   }
 
   .offers {
+    padding: 14.1rem 0;
     display: block;
     background: $clr-white;
 
@@ -243,6 +244,7 @@
     }
 
     &__list-wrapper {
+      position: relative;
     }
 
     &__list {
@@ -261,46 +263,48 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: pink;
     }
 
     &__item-wrapper {
-      width: 100%;
       display: flex;
-      background: grey;
-      position: absolute;
+      align-items: center;
     }
 
     &__item:nth-child(1) {
+      // background-color: rgba(pink, 0.4);
       transform: rotate(30deg);
       div {
-        transform: rotate(-30deg);
+        transform: rotate(-30deg) translateX(52%);
       }
     }
     &__item:nth-child(2) {
-      display: none;
-      top: 40%;
-      right: 0;
-      transform: translateX(82%);
+      transform: rotate(65deg);
+      div {
+        transform: rotate(-65deg) translateX(50%);
+      }
     }
     &__item:nth-child(3) {
-      display: none;
-      top: 45%;
-      right: 0;
-      transform: translateX(82%);
+      transform: rotate(100deg);
+      div {
+        transform: rotate(-100deg) translateX(50%);
+      }
     }
     &__item:nth-child(4) {
-      display: none;
-      top: 45%;
-      right: 0;
-      transform: translateX(82%);
+      transform: rotate(135deg);
+      div {
+        transform: rotate(-135deg) translateX(51%);
+      }
     }
 
     &__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
       font-family: $yeseva;
       font-size: 1.8rem;
       background: $clr-primary;
-      padding: 0.4em;
       color: $clr-white;
       border-radius: 50%;
       position: relative;
@@ -308,8 +312,8 @@
       &::after {
         content: "";
         position: absolute;
-        width: 200%;
-        height: 200%;
+        width: 150%;
+        height: 150%;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
@@ -320,19 +324,144 @@
     }
 
     &__offer {
-      margin-left: 1rem;
-      font-size: 1.8rem;
-      line-height: 21px;
+      margin-left: 2rem;
+      font-size: 1.4rem;
+      line-height: 19px;
       font-weight: $bold;
       text-align: left;
     }
 
     &__form-wrapper {
-      background: lightblue;
+      flex: 1;
+      padding-left: 6rem;
+    }
+
+    &__form {
+      display: flex;
+      flex-flow: column nowrap;
+      max-width: 50.3rem;
+
+      background: url(../assets/bg-form-2.png), $clr-secondary-darker;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 2.7rem 5rem;
+    }
+
+    &__form-title {
+      font-size: 2rem;
+      line-height: 25px;
+      margin-bottom: 4rem;
+    }
+
+    &__btn-margin {
+      margin-top: 4rem !important;
+      align-self: flex-end;
+    }
+
+    &__input-margin {
+      margin-bottom: 4rem;
+    }
+
+    &__saving {
+      display: flex;
+      align-items: center;
+      margin-top: 5rem;
     }
 
     &__pig {
-      width: 10px;
+      width: 7.2rem;
+      height: 7.2rem;
+      background: $clr-primary;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 60%;
+      }
+    }
+
+    &__saving-text {
+      color: $clr-primary;
+      text-align: left;
+      font-size: 2rem;
+      margin-left: 2.5rem;
+      text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+  }
+
+  .gallery {
+    padding-top: 13.7rem;
+    padding-bottom: 13.7rem;
+    text-align: left;
+    background-image: linear-gradient(
+        to left,
+        rgba($clr-black, 0.7),
+        rgba($clr-black, 0.7)
+      ),
+      url("../assets/bg-gallery.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &__carousel {
+      display: none;
+      &::before {
+        content: none;
+      }
+    }
+
+    &__title {
+      margin-bottom: 4.7rem;
+    }
+
+    &__list {
+      list-style: none;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 2.3rem;
+      }
+    }
+
+    &__style {
+      font-size: 2rem;
+      line-height: 30px;
+    }
+  }
+
+  .design {
+    background: $clr-white;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 60%;
+      right: 0;
+      height: 100%;
+      background-color: $clr-secondary-darker;
+    }
+
+    &__title {
+      color: $clr-secondary-darker;
+    }
+
+    &__card-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  .team {
+    background: $clr-white;
+
+    &__cards-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
     }
   }
 }
