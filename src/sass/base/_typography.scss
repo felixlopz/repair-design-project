@@ -1,44 +1,42 @@
 // Yeseva and Oxygen fonts
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Yeseva+One&display=swap');
-body{
-	font-family: $oxygen;
-	font-size: $default-font-size;
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Yeseva+One&display=swap");
+body {
+  font-family: $oxygen;
+  font-size: $default-font-size;
 }
 
-.title{
-	font-family: $yeseva;
-	font-size: 2.2rem;
-	text-transform: uppercase;
-	margin-bottom: 2rem;
-	line-height: 138.6%;
+.title {
+  font-family: $yeseva;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  line-height: 138.6%;
 
-	&--primary{
-		color: $clr-primary;
-	}
-	&--dark{
-		color: $clr-black;
-	}
+  &--primary {
+    color: $clr-primary;
+  }
+  &--dark {
+    color: $clr-black;
+  }
 }
 
-.paragraph{
-	font-size: 1.4rem;
-	line-height: 169.8%;
-	font-weight: $light;
+.paragraph {
+  font-size: 1.4rem;
+  line-height: 169.8%;
+  font-weight: $regular;
 
-	&:not(:last-child){
-		margin-bottom: 4rem;
-	}
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
 }
-
 
 // Dekstop Styles
-@include respond (tab-port){
-	.title{
-		font-size: 2.7rem;
-	}
-	.paragraph{
-		font-size: 1.8rem;
-		line-height: 29px;
-	}
-
+@include respond(tab-port) {
+  .title {
+    font-size: 2.7rem;
+  }
+  .paragraph {
+    font-size: 1.8rem;
+    line-height: 29px;
+  }
 }
