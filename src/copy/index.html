@@ -791,95 +791,100 @@
           </div>
         </div>
       </section>
-      <section class="contact container">
-        <h2 class="title">
-          Have any Questions?
-        </h2>
-        <form class="form contact__form">
-          <div class="form__group form--input-margin">
-            <label for="name2" class="form__label">
-              Name
-            </label>
-            <input
-              type="text"
-              class="form__input"
-              id="name2"
-              placeholder="What is your name:"
+      <section class="contact">
+        <div class="container-fluid contact__container">
+          <div class="contact__form-wrapper">
+            <h2 class="title">
+              Have any Questions?
+            </h2>
+            <form class="form contact__form">
+              <div class="form__group form--input-margin">
+                <label for="name2" class="form__label">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="name2"
+                  placeholder="What is your name:"
+                />
+              </div>
+              <div class="form__group form--input-margin ">
+                <label for="number2" class="form__label">
+                  number
+                </label>
+                <input
+                  type="number"
+                  class="form__input"
+                  id="number2"
+                  placeholder="Your phone number:"
+                />
+              </div>
+              <div class="form__group form--checkbox-margin">
+                <label for="question" class="form__label">
+                  question
+                </label>
+                <input
+                  type="text"
+                  class="form__input"
+                  id="question"
+                  placeholder="I want to know:"
+                />
+              </div>
+              <div class="form__group">
+                <label class="form__checkbox"
+                  >I agree to the processing of personal data
+                  <input type="checkbox" />
+                  <span class="form__checkmark"></span>
+                </label>
+              </div>
+              <button class="btn btn--full btn--primary form--btn-margin">
+                Submit
+              </button>
+            </form>
+          </div>
+          <figure class="contact__map-box">
+            <img
+              src="./assets/mobile/map.jpg"
+              srcset="./assets/map.jpg 1140w"
+              alt="location of repair design project"
+              class="contact__map"
             />
-          </div>
-          <div class="form__group form--input-margin">
-            <label for="number2" class="form__label">
-              number
-            </label>
-            <input
-              type="number"
-              class="form__input"
-              id="number2"
-              placeholder="Your phone number:"
-            />
-          </div>
-          <div class="form__group form--checkbox-margin">
-            <label for="question" class="form__label">
-              question
-            </label>
-            <input
-              type="text"
-              class="form__input"
-              id="question"
-              placeholder="I want to know:"
-            />
-          </div>
-          <div class="form__group">
-            <label class="form__checkbox"
-              >I agree to the processing of personal data
-              <input type="checkbox" />
-              <span class="form__checkmark"></span>
-            </label>
-          </div>
-          <button class="btn btn--full btn--primary form--btn-margin">
-            Submit
-          </button>
-        </form>
-        <figure class="contact__map-box">
-          <img
-            src="./assets/mobile/map.jpg"
-            alt="location of repair design project"
-            class="contact__map"
-          />
-        </figure>
-        <h4 class="contact__direction">
-          Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928)
-          768 32 29
-        </h4>
-        <ul class="contact__socials">
-          <li class="contact__item">
-            <a href="mailto:hello@felixlopez.tech" class="contact__link">
-              <img
-                src="./assets/icons/envelope.png"
-                alt="envelope icon"
-                class="contact__icon"
-              />
-            </a>
-          </li>
-          <li class="contact__item">
-            <a
-              target="_blank"
-              href="https://instagram.com/felixlopz_"
-              class="contact__link"
-            >
-              <img
-                src="./assets/icons/instagram.png"
-                alt="instagram icon"
-                class="contact__icon"
-              />
-            </a>
-          </li>
-        </ul>
+          </figure>
+          <h4 class="contact__direction">
+            Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928)
+            768 32 29
+          </h4>
+          <ul class="contact__socials">
+            <li class="contact__item">
+              <a href="mailto:hello@felixlopez.tech" class="contact__link">
+                <img
+                  src="./assets/icons/envelope.png"
+                  alt="envelope icon"
+                  class="contact__icon"
+                />
+              </a>
+            </li>
+            <li class="contact__item">
+              <a
+                target="_blank"
+                href="https://instagram.com/felixlopz_"
+                class="contact__link"
+              >
+                <img
+                  src="./assets/icons/instagram.png"
+                  alt="instagram icon"
+                  class="contact__icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="header__contact container">
-        <span class="header__project-name color-primary">
+    <footer class="footer">
+      <div class="footer__contact container">
+        <span class="footer__project-name color-primary">
           IC "Repair Design Project"
         </span>
         <div class="nav">
@@ -904,10 +909,10 @@
             </li>
           </ul>
         </div>
-        <span class="header__phone-number">
+        <span class="footer__phone-number">
           +7 (928) 768-32-39
         </span>
-        <div class="btn btn--primary btn--shadow-primary header__btn">
+        <div class="btn btn--primary btn--shadow-primary footer__btn">
           request a call
         </div>
       </div>
