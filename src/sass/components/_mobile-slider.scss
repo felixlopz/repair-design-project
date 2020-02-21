@@ -1,0 +1,33 @@
+.mobile-slider{
+	
+	&__track{
+		position: relative;
+	}
+
+	&__arrow{
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 3.5rem;
+		height: 3.5rem;
+		background: $clr-primary;
+		border-radius: 50%;
+
+		img{
+			width: 30%;
+		}
+	}
+
+	&__arrow:first-child{
+		top: 50%;
+		left: 0.5rem;
+		transform: translateY(-50%);
+	}
+
+	&__arrow:last-child{
+		top: 50%;
+		right: 0.5rem;
+		transform: translateY(-50%);
+	}
+}
