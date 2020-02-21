@@ -1,5 +1,9 @@
 .projects {
   margin-top: 3.6rem;
+
+  &__slider{
+    margin-bottom: 3.6rem;
+  }
 }
 
 .control {
@@ -47,11 +51,12 @@
   background: $clr-white;
   position: relative;
   z-index: 1;
+  
+  &__list-wrapper{
+    display: none;
+  }
 
-  &__carousel {
-    width: 100%;
-    height: 24.2rem;
-    background: lightgrey;
+  &__slider {    
     position: relative;
 
     &::before {
@@ -143,11 +148,15 @@
     background-position: center center;
     background-size: cover;
 
+    &__slider{
+      display: none;
+    }
+
     &__title {
       margin-top: 5.3rem;
       display: inline-block;
       position: relative;
-      //
+      
       &::after {
         content: "";
         position: absolute;
@@ -426,11 +435,12 @@
     background-position: center;
     background-size: cover;
 
-    &__carousel {
+    &__list-wrapper{
+     display: block;
+    }
+
+    &__slider{
       display: none;
-      &::before {
-        content: none;
-      }
     }
 
     &__title {
