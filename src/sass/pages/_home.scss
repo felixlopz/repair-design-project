@@ -260,7 +260,9 @@
   }
 
   .offers {
-    padding: 14.1rem 0;
+    padding-top: 14.1rem;
+    padding-bottom: 20.1rem;
+
     display: block;
     background: $clr-white;
 
@@ -421,16 +423,59 @@
     padding-bottom: 13.7rem;
     text-align: left;
     background-image: linear-gradient(
-        to left,
-        rgba($clr-black, 0.7),
-        rgba($clr-black, 0.7)
-      ),
+      120.96deg, 
+      rgba(0, 0, 0, 0.75) 0%, 
+      rgba(0, 0, 0, 0.9) 100%
+    ),
       url("../assets/bg-gallery.jpg");
     background-position: center;
     background-size: cover;
+    position: relative;
+    
 
     &__list-wrapper{
      display: block;
+     position: relative;
+    }
+
+    &__photos{
+      position: absolute;
+      left: 35%;
+      top: -65%;
+      bottom:  -10%;
+      right: -5%;
+      list-style: none;
+      display: grid;
+      grid-template-areas:".... pic3"  
+                          "pic1 pic3" 
+                          "pic1 pic3" 
+                          "pic1 pic3" 
+                          "pic1 pic4" 
+                          "pic1 pic4"
+                          "pic2 pic4"
+                          "pic2 pic4"
+                          "pic2 pic4"
+                          "pic2 ....";
+
+      grid-gap: 30px;                          
+    }
+
+
+    &__photo{
+      object-fit: cover;
+    }
+
+    &__photo:nth-child(1){
+      grid-area: pic1;
+    }
+    &__photo:nth-child(2){
+      grid-area: pic2;
+    }
+    &__photo:nth-child(3){
+      grid-area: pic3;
+    }
+    &__photo:nth-child(4){
+      grid-area: pic4;
     }
 
     &__slider{
@@ -458,6 +503,7 @@
   }
 
   .design {
+    padding-top: 15rem;
     background: $clr-white;
     position: relative;
 

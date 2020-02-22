@@ -42,7 +42,7 @@ const projectsSliderInfo = [
         city: 'Romania',
         area: '57 m2',
         time:'1 month',
-        cost:'$,000',
+        cost:'$25,000',
     },
 ]
 
