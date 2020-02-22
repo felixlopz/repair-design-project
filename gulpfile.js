@@ -4,12 +4,12 @@
  */
 
 var settings = {
-	clean: false,
+	clean: true,
 	scripts: true,
 	polyfills: true,
 	styles: true,
-	svgs: false,
-	images: false,
+	svgs: true,
+	images: true,
 	copy: true,
 	reload: true
 };
