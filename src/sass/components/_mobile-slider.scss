@@ -30,4 +30,22 @@
 		right: 0.5rem;
 		transform: translateY(-50%);
 	}
+
+
+	@include respond(tab-port){
+		&__track{
+
+			background: pink;
+		}
+
+		&__slides{
+
+		}
+
+		&__slide{
+			// width: 579px !important;
+		}
+
+
+	}
 }

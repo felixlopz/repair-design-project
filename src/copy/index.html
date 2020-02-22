@@ -7,7 +7,7 @@
     <title>IC "Repair Design Project"</title>
     <link rel="stylesheet" type="text/css" href="css/main.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script defer src ="js/main.min.js">
+    <script defer src ="js/main.js">
     </script>
   </head>
   <body>
@@ -78,74 +78,98 @@
     </header>
     <main>
       <section class="projects">
-        <div class="container projects__container">
+        <div class="container">
           <div class="projects__wrapper">
-            <h2 class="title title--primary projects__title">
-              Completed <br />
-              Projects
-            </h2>
-            <p class="paragraph projects__paragraph">
-              Only a small part of the work performed by our company is presented
-              on the site. For 14 years on in the construction market we have made
-              happy more than 1000 families.
-            </p>
-            <div class="glide mobile-slider projects__slider">
-              <div class="glide__track mobile-slider__track" data-glide-el="track">
-                <ul class="glide__slides mobile-slider__slides">
-                  <li class="glide__slide mobile-slider__slide">
-                    <img src="./assets/mobile/mobile-slider-1.jpg" alt="A cool department">
-                  </li>
-                  <li class="glide__slide mobile-slider__slide">
-                    <img src="./assets/mobile/mobile-slider-2.jpg" alt="A cool department">
-                  </li>
-                </ul>
-              </div>
-              <div class="glide__arrows" data-glide-el="controls">
-                <div 
-                  class="glide__arrow 
-                         glide__arrow--left 
-                         mobile-slider__arrow" 
-                  data-glide-dir="<"
-                >
-                  <img src="./assets/icons/arrow-left.png" alt="<">
+            <div class="projects__info">
+              <h2 class="title title--primary projects__title">
+                Completed <br />
+                Projects
+              </h2>
+              <p class="paragraph projects__paragraph">
+                Only a small part of the work performed by our company is presented
+                on the site. For 14 years on in the construction market we have made
+                happy more than 1000 families.
+              </p>
+              <div class="glide mobile-slider projects__slider">
+                <div class="glide__track mobile-slider__track" data-glide-el="track">
+                  <ul class="glide__slides mobile-slider__slides">
+                    <li class="glide__slide mobile-slider__slide">
+                      <img 
+                        alt="A cool department"
+                        src="./assets/mobile/mobile-slider-1.jpg"
+                        srcset="./assets/project-carousel-1.jpg 1180w" 
+                      >
+                    </li>
+                    <li class="glide__slide mobile-slider__slide">
+                      <img 
+                        alt="A cool department"
+                        src="./assets/project-carousel-2.jpg" 
+                        srcset="./assets/project-carousel-2.jpg 1180w" 
+                      >
+                    </li>
+                  </ul>
                 </div>
-                <div 
-                  class="glide__arrow
-                         glide__arrow--right 
-                         mobile-slider__arrow" 
-                  data-glide-dir=">"
-                >
-                  <img src="./assets/icons/arrow-right.png" alt="<">
+                <div class="glide__arrows" data-glide-el="controls">
+                  <div 
+                    class="glide__arrow 
+                           glide__arrow--left 
+                           mobile-slider__arrow" 
+                    data-glide-dir="<"
+                  >
+                    <img src="./assets/icons/arrow-left.png" alt="<">
+                  </div>
+                  <div 
+                    class="glide__arrow
+                           glide__arrow--right 
+                           mobile-slider__arrow" 
+                    data-glide-dir=">"
+                  >
+                    <img src="./assets/icons/arrow-right.png" alt="<">
+                  </div>
+                </div>
+              </div>
+              <div class="project-carousel">
+                <div class="project-carousel__info">
+                  <ul class="project-carousel__details">
+                    <li class="project-carousel__item">
+                      <h3 class="project-carousel__title">city:</h3>
+                      <p class="project-carousel__desc">
+                        Rostov
+                      </p>
+                    </li>
+                    <li class="project-carousel__item">
+                      <h3 class="project-carousel__title">apartment area:</h3>
+                      <p class="project-carousel__desc">81 m2</p>
+                    </li>
+                    <li class="project-carousel__item">
+                      <h3 class="project-carousel__title">repair time:</h3>
+                      <p class="project-carousel__desc">3.5 months</p>
+                    </li>
+                    <li class="project-carousel__item">
+                      <h3 class="project-carousel__title">repair cost:</h3>
+                      <p class="project-carousel__desc">upon request</p>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="project-carousel">
-              <div class="project-carousel__info">
-                <ul class="project-carousel__details">
-                  <li class="project-carousel__item">
-                    <h3 class="project-carousel__title">city:</h3>
-                    <p class="project-carousel__desc">
-                      Rostov
-                    </p>
-                  </li>
-                  <li class="project-carousel__item">
-                    <h3 class="project-carousel__title">apartment area:</h3>
-                    <p class="project-carousel__desc">81 m2</p>
-                  </li>
-                  <li class="project-carousel__item">
-                    <h3 class="project-carousel__title">repair time:</h3>
-                    <p class="project-carousel__desc">3.5 months</p>
-                  </li>
-                  <li class="project-carousel__item">
-                    <h3 class="project-carousel__title">repair cost:</h3>
-                    <p class="project-carousel__desc">upon request</p>
-                  </li>
-                </ul>
+            <!-- <div class="projects__slider-wrapper">
+
+              <div class="glide project-carousel__slider">
+                <div class="glide__track project-carousel__track" data-glide-el="track">
+                  <ul class="glide__slides project-carousel__slides">
+                    <li class="glide__slide project-carousel__slide">
+                      <img src="./assets/project-carousel-1.jpg" alt="A cool department">
+                    </li>
+                    <li class="glide__slide project-carousel__slide">
+                      
+                      <img src="./assets/project-carousel-2.jpg" alt="A cool department">
+                    </li>                
+                  </ul>
+                </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <!-- Aqui iria el segundo carrusel -->
-         
         </div>
       </section>
       <section class="control">
@@ -160,7 +184,16 @@
               alt="yellow camera icon"
             />
           </div>
-          <div class="control__video"></div>
+          <div class="control__video">
+            <div class="video">
+              <video
+                class="video__desktop" 
+                controls 
+              >
+                <source src="../src/assets/video/video.mp4" type="video/mp4">
+              </video>   
+            </div>
+          </div>
           <hr class="control__bar" />
           <p class="paragraph control__paragraph">
             At each facility, a camera is installed that broadcasts the progress

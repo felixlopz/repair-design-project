@@ -1,16 +1,3 @@
-const glideConfig = {
-    type: 'carousel',
-    startAt: 2,
-    perView: 5,
-    focusAt: 'center',
-    gap: 20,
-    breakpoints:{
-      1024:{
-        perView:2,
-      }
-  }
-};
-
 
 const mobileSliderConfig = {
     type: 'carousel',
@@ -20,6 +7,20 @@ const mobileSliderConfig = {
     gap: 20
 }
 
+
+const projectSliderConfig = {
+    type: 'carousel',
+    startAt: 0,
+    perView: 1,
+    focusAt: 'center',
+    gap: 20,
+    breakpoints:{
+      1180:{
+        perView:2,
+        gap: 50,
+      }
+    }
+}
 
 const projectsSliderInfo = [
     {
@@ -39,7 +40,7 @@ const projectsSliderInfo = [
 
 let projectsSliderItems = document.querySelectorAll('.project-carousel__desc');
 
-const projectMobileSlider = new Glide('.projects__slider', mobileSliderConfig );
+const projectMobileSlider = new Glide('.projects__slider', projectSliderConfig );
 
 projectMobileSlider.on(['mount.after', 'run'], () => {
     setSliderInfo();
@@ -48,6 +49,7 @@ projectMobileSlider.on(['mount.after', 'run'], () => {
 projectMobileSlider.mount();
 
 const galleryMobileSlider = new Glide('.gallery__slider', mobileSliderConfig ).mount();
+new Glide('.project-carousel__slider', mobileSliderConfig ).mount();
 
 function setSliderInfo (){
     const info = Object.values(projectsSliderInfo [projectMobileSlider.index]);  
