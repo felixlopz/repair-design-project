@@ -1,4 +1,8 @@
 .mobile-slider{
+
+	&__cities{
+		display: none;
+	}
 	
 	&__track{
 		position: relative;
@@ -13,6 +17,7 @@
 		height: 3.5rem;
 		background: $clr-primary;
 		border-radius: 50%;
+		box-shadow: $box-shadow;
 
 		img{
 			width: 30%;
@@ -33,19 +38,67 @@
 
 
 	@include respond(tab-port){
-		&__track{
+		position: absolute;
+		left: 48%;
+		top: 22%;
+		width: 80%;
+		max-width: 1080px;
 
-			background: pink;
+		&__cities{
+			display: block;
+			position: absolute;
+			top: -70px;
+			display: flex;
+			list-style: none;
 		}
 
-		&__slides{
+		&__name{
+			font-size: 1.4rem;
+			font-weight: $bold;
+			line-height: 19px;
+			text-transform: uppercase;
+			color: rgba(255, 255, 255, 0.3);
+			cursor: pointer;
+			transition: color 0.3s ease-in;
 
+			&:hover{
+				color: #fff;
+			}
+
+			&:not(:last-child){
+				margin-right: 5rem;
+			}
+			&--active{
+				color: $clr-primary;
+				position: relative;
+
+				&:hover{
+					color: $clr-primary;
+				}
+
+				&::before{
+					content: '';
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: -8px;
+					height: 1px;
+					background-color: $clr-primary;
+				}
+
+			}	
 		}
 
-		&__slide{
-			// width: 579px !important;
+		&__arrow:first-child{
+			display: none;
 		}
 
-
+		&__arrow:last-child{
+			width: 5rem;
+			height: 5rem;
+			top: 50%;
+			left: 54%;
+			transform: translateY(-50%);
+		}
 	}
 }
