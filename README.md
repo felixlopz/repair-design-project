@@ -8,4 +8,4 @@ This is project is a design to html convertion you canse de design on figma [her
 
 This landing page is powered by gulp, that means all assets are optimized and css and js files optimize, this project uses this [gulp-boilerplate](http://github.com/cferdinandi/gulp-boilerplate)
 
-![repair.png](repair.png)
+![repair.png](repair.jpg)
