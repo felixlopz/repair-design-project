@@ -46,6 +46,6 @@
 	"dependencies": {
 		"lodash": "^4.17.15",
 		"lodash.template": "^4.5.0",
-		"node-sass": "^4.13.1"
+		"node-sass": "^7.0.0"
 	}
 }
